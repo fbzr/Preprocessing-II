@@ -8,6 +8,10 @@
 
     div {
       margin: 2% 0;
+
+      @media @mobile {
+        margin: 4% 0;
+      }
     }
   }
 
@@ -16,17 +20,23 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+        width: 100%;
+      }
 
       img {
         border-radius: 10px;
@@ -37,6 +47,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+      .display-flex(@direction: column-reverse);
+    }
 
     .text-content {
       padding-left: 1%;
@@ -53,6 +67,10 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      width: 100%;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -61,15 +79,27 @@
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
+    
+    .display-flex(@justify: space-between);
+
+    @media @mobile {
+      .display-flex(@direction: column);
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
 
+      @media @mobile {
+        width: 85%;
+      }
+
       .btn {
         .custom-btn(teal, white);
+
+        @media @mobile {
+          .custom-btn(teal, white, @width: 100%);
+        }
       }
     }
   }
