@@ -262,3 +262,14 @@ nav .nav-container .nav-links-container a {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  background-color: teal;
+  color: white;
+  height: 40px;
+  font-size: 1.8rem;
+  width: 80%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

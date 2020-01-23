@@ -4,3 +4,13 @@
     justify-content: @justify;
     align-items: @align;
 }
+
+.custom-btn(@bg-color, @font-color, @height: 40px, @font-size: 1.8rem, @width: 80%) {
+    background-color: @bg-color;
+    color: @font-color;
+    height: @height;
+    font-size: @font-size;
+    width: @width;
+    border-radius: 15px;
+    .display-flex();
+}
