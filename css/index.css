@@ -172,18 +172,25 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.container.home nav {
+nav {
+  width: 100%;
+  border-bottom: dashed 2px #C0C0C0;
+}
+nav .nav-container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.container.home nav .nav-links-container {
+nav .nav-container .nav-links-container {
   width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.container.home nav .nav-links-container a {
+nav .nav-container .nav-links-container a {
   display: flex;
   justify-content: center;
   align-items: center;
