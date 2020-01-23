@@ -159,6 +159,10 @@ p {
   font-size: 1.6rem;
   padding-bottom: 10px;
 }
+a {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -172,13 +176,19 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2% 0;
 }
 .container.home nav .nav-links-container {
   width: 40%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+}
+.container.home nav .nav-links-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 100%;
 }
 .footer {
   width: 100%;

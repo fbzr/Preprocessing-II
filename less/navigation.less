@@ -1,10 +1,15 @@
 // Navigation Styles here
 .container.home nav {
-    .display-flex();
-    padding: 2% 0;
+    .display-flex(space-between);
 
     .nav-links-container {
         width: 40%;
         .display-flex();
+
+        a {
+            .display-flex();
+            height: @nav-heigth;
+            width: 100%;
+        }
     }
 }
