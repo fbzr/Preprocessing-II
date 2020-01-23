@@ -79,6 +79,7 @@
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
+    border-bottom: 2px dashed @navigation-border;
     
     .display-flex(@justify: space-between);
 
@@ -100,6 +101,34 @@
         @media @mobile {
           .custom-btn(@button-bg, white, @width: 100%);
         }
+      }
+    }
+  }
+
+  .contact {
+    .display-flex(@direction: column);
+
+    form {
+      width: 50%;
+      max-width: 100%;
+      .display-flex(@direction: column);
+
+      @media @tablet {
+        width: 60%;
+      }
+
+      @media @mobile {
+        width: 90%;
+      }
+
+      .form-group {
+        width: 100%;
+        .display-flex(@direction: column, @align: stretch); 
+        padding-bottom: 6%;
+      }
+
+      .btn {
+        .custom-btn(@button-bg, white, @width: 100%);
       }
     }
   }
