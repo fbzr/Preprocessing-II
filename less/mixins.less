@@ -1,1 +1,28 @@
 // Mixins in here
+.display-flex(@justify: center, @align: center, @direction: row) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+// Custom button
+.custom-btn(@bg-color, @font-color, @height: 40px, @font-size: 1.8rem, @width: 80%) {
+    background-color: @bg-color;
+    color: @font-color;
+    height: @height;
+    font-size: @font-size;
+    width: @width;
+    border-radius: 15px;
+    cursor: pointer;
+    .display-flex();
+}
+
+// Hover effect
+.hover-effect(@bg-color, @font-color, @duration: 300ms) {
+    transition: background-color @duration, color @duration;
+    &:hover {
+        background-color: @bg-color;
+        color: @font-color;
+    }
+}
