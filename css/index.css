@@ -360,10 +360,16 @@ nav .nav-container .nav-links-container a:hover {
   font-size: 1.8rem;
   width: 80%;
   border-radius: 15px;
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  transition: background-color 300ms, color 300ms;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: #1fc8e3;
+  color: white;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
@@ -373,6 +379,7 @@ nav .nav-container .nav-links-container a:hover {
     font-size: 1.8rem;
     width: 100%;
     border-radius: 15px;
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -418,9 +425,15 @@ nav .nav-container .nav-links-container a:hover {
   font-size: 1.8rem;
   width: 100%;
   border-radius: 15px;
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  transition: background-color 300ms, color 300ms;
   border: none;
+}
+.home .contact form .btn:hover {
+  background-color: #1fc8e3;
+  color: white;
 }

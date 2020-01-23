@@ -97,6 +97,7 @@
 
       .btn {
         .custom-btn(@button-bg, white);
+        .hover-effect(lighten(@button-bg, 10%), white);
 
         @media @mobile {
           .custom-btn(@button-bg, white, @width: 100%);
@@ -129,6 +130,7 @@
 
       .btn {
         .custom-btn(@button-bg, white, @width: 100%);
+        .hover-effect(lighten(@button-bg, 10%), white);
         border: none;
       }
     }
