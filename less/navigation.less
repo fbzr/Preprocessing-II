@@ -6,16 +6,35 @@ nav {
     .nav-container {
         .container();
         .display-flex(space-between);
+
+        @media @tablet {
+            .display-flex(@direction: column);
+        }
+
+        .nav-title-container {
+            @media @tablet {
+                height: @nav-heigth;
+                .display-flex();
+            }
+        }
     
         .nav-links-container {
             width: 40%;
             .display-flex();
+
+            @media @tablet {
+                width: 100%;
+            }
     
             a {
                 .display-flex();
                 height: @nav-heigth;
                 width: 100%;
+
+                @media @tablet {
+                    height: @nav-heigth - @nav-heigth/2;
+                }
             }
-        }    
+        }
     }
 }
