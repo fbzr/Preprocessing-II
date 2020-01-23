@@ -336,7 +336,7 @@ nav .nav-container .nav-links-container a:hover {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .home .content-pick {
     display: flex;
     flex-direction: column;
@@ -347,6 +347,11 @@ nav .nav-container .nav-links-container a:hover {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 800px) {
+  .home .content-pick .destination {
+    width: 50%;
+  }
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
@@ -417,6 +422,9 @@ nav .nav-container .nav-links-container a:hover {
   justify-content: center;
   align-items: stretch;
   padding-bottom: 6%;
+}
+.home .contact form .form-group label {
+  padding-bottom: 4px;
 }
 .home .contact form .btn {
   background-color: #17A2B8;

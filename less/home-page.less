@@ -83,13 +83,17 @@
     
     .display-flex(@justify: space-between);
 
-    @media @mobile {
+    @media @tablet {
       .display-flex(@direction: column);
     }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @tablet {
+        width: 50%;
+      }
 
       @media @mobile {
         width: 85%;
@@ -126,6 +130,10 @@
         width: 100%;
         .display-flex(@direction: column, @align: stretch); 
         padding-bottom: 6%;
+
+        label {
+          padding-bottom: 4px;
+        }
       }
 
       .btn {
