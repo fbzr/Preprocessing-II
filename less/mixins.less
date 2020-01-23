@@ -6,6 +6,7 @@
     align-items: @align;
 }
 
+// Custom button
 .custom-btn(@bg-color, @font-color, @height: 40px, @font-size: 1.8rem, @width: 80%) {
     background-color: @bg-color;
     color: @font-color;
@@ -14,4 +15,13 @@
     width: @width;
     border-radius: 15px;
     .display-flex();
+}
+
+// Hover effect
+.hover-effect(@bg-color, @font-color, @duration: 300ms) {
+    transition: background-color @duration, color @duration;
+    &:hover {
+        background-color: @bg-color;
+        color: @font-color;
+    }
 }
