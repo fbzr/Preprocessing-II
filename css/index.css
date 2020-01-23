@@ -422,4 +422,5 @@ nav .nav-container .nav-links-container a:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  border: none;
 }
